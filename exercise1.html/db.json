@@ -14,10 +14,12 @@
     }
   ],
   "profile": {
-    "firstname": "Juliana",
+    "firstname": "Maria",
     "lastname": "Demirdjian",
-    "code": "css",
+    "code": "html",
     "cartype1": "on",
-    "carbrand": "tesla"
+    "cartype2": "on",
+    "cartype3": "on",
+    "carbrand": "audi"
   }
 }
