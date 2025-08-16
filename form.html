@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- works like <a href="/index.html">Home</a> -->
+            <a href="index.html">Home</a>
+            <a href="form.html">Form</a>
+        </nav>
+    </header>
+
+    <main>
+        <form method="POST" action="http://localhost:3000/profile">
+
+            <div>
+                <label for="firstname"> First Name </label>
+                <input type="text" name="firstname" id="firstname" />
+            </div>
+            <div>
+                <label for="lastname"> Last Name </label>
+                <input type="text" name="lastname" id="lastname" />
+            </div>
+            <div>
+                <label for="html"> Html </label>
+                <input type="radio" name="code" id="html" value="html">
+                <label for="css"> CSS </label>
+                <input type="radio" name="code" id="css" value="css">
+                <label for="javascript"> JavaScript</label>
+                <input type="radio" name="code" id="javascript" value="javascript">
+            </div>
+            <div>
+                <label for="cartype1"> Car type 1 </label>
+                <input type="checkbox" name="cartype1" id="cartype1">
+                <label for="cartype2"> Car type 2 </label>
+                <input type="checkbox" name="cartype2" id="cartype2">
+                <label for="cartype3"> Car type 3 </label>
+                <input type="checkbox" name="cartype3" id="cartype3">
+            </div>
+            <div>
+                <select name="carbrand" id="carbrand">
+                    <option value="tesla"> Tesla </option>
+                    <option value="audi"> Audi </option>
+                    <option value="bmw"> BMW </option>
+                </select>
+            </div>
+            <button type="submit">Submit form</button>
+        </form>
+
+    </main>
+
+    <footer>Copyright &copy; 2024</footer>
+
+    <script>
+        function handleform(event) {
+            event.preventDefault();
+            const fname = document.getElementById("firstname").value;
+            console.log(fname)
+
+        }
+    </script>
+</body>
+
+</html>
